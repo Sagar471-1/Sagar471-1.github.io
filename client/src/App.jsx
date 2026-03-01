@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Background3D from './components/Background3D';
+import React, { useState, lazy, Suspense } from 'react';
+const Background3D = lazy(() => import('./components/Background3D'));
 import Navbar from './components/Navbar';
 import LogoSplash from './components/LogoSplash';
 import Hero from './components/Hero';
@@ -57,7 +57,9 @@ function App() {
         <div className={`relative w-full min-h-screen text-[#FBE4D8] font-sans selection:bg-[#DFB6B2] selection:text-[#050205] bg-[#050205] ${!isDayMode ? 'no-animations' : ''}`}>
             {showSplash && <LogoSplash onComplete={handleSplashComplete} />}
 
-            <Background3D />
+            <Suspense fallback={<div className="fixed inset-0 z-0 bg-[#050205]" />}>
+                <Background3D />
+            </Suspense>
             <Navbar />
 
             <main className="relative z-10">
