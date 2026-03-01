@@ -190,7 +190,7 @@ export default function Contact() {
                     </div>
                     <div className="text-right hidden md:block">
                         <p className="text-[#FBE4D8]/20 font-mono text-[10px] leading-tight uppercase tracking-widest">
-                            Coord: 40.7128° N, 74.0060° W<br />
+                            Coord: [REDACTED] // Classified<br />
                             Protocol: Secure_Handshake_v4.2<br />
                             Encryption: AES_256_GHOST
                         </p>
