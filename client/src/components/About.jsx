@@ -1,9 +1,8 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import DisplayCards from './ui/display-cards';
 import { GlowingEffect } from './ui/glowing-effect';
-import { Award, Code, Sparkles, Briefcase, GraduationCap, Rocket } from 'lucide-react';
+import { Briefcase, Sparkles, GraduationCap } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -114,36 +113,6 @@ export default function About() {
 
         return () => ctx.revert();
     }, []);
-
-    const achievementCards = [
-        {
-            icon: <Award className="size-4 text-[#DFB6B2]" />,
-            title: "AWS Certified",
-            description: "Cloud Solutions Architect",
-            date: "2026",
-            iconClassName: "text-[#854F6C]",
-            titleClassName: "text-[#FBE4D8]",
-            className: "[grid-area:stack] hover:-translate-y-10 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-[#522B5B]/30 before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-[#050205]/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
-        },
-        {
-            icon: <Code className="size-4 text-[#DFB6B2]" />,
-            title: "Full Stack Dev",
-            description: "React • Next.js • Node.js",
-            date: "Expert",
-            iconClassName: "text-[#854F6C]",
-            titleClassName: "text-[#FBE4D8]",
-            className: "[grid-area:stack] translate-x-16 translate-y-10 hover:-translate-y-1 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-[#522B5B]/30 before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-[#050205]/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
-        },
-        {
-            icon: <Sparkles className="size-4 text-[#DFB6B2]" />,
-            title: "3D Artist",
-            description: "Blender • Unreal Engine 5",
-            date: "Creative",
-            iconClassName: "text-[#854F6C]",
-            titleClassName: "text-[#FBE4D8]",
-            className: "[grid-area:stack] translate-x-32 translate-y-20 hover:translate-y-10",
-        },
-    ];
 
     return (
         <section ref={comp} className="about-section min-h-screen flex flex-col items-center justify-center px-4 md:px-20 relative z-10 py-32 overflow-hidden bg-gradient-to-br from-[#522B5B]/10 via-[#150B1F]/20 to-[#854F6C]/10 rounded-3xl mx-4 md:mx-8 backdrop-blur-sm">
@@ -347,10 +316,6 @@ export default function About() {
                 </div>
             </div>
 
-            {/* Display Cards - Achievements */}
-            <div className="w-full flex justify-center relative z-10">
-                <DisplayCards cards={achievementCards} />
-            </div>
         </section>
     );
 }

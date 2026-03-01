@@ -10,6 +10,8 @@ import {
     SiCplusplus, SiNextdotjs, SiBlender, SiUnrealengine, SiPostgresql,
     SiGraphql, SiTypescript, SiTailwindcss
 } from 'react-icons/si';
+import { Award, Code, Sparkles } from 'lucide-react';
+import DisplayCards from './ui/display-cards';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -116,6 +118,36 @@ export default function Skills() {
         );
     };
 
+    const achievementCards = [
+        {
+            icon: <Award className="size-4 text-[#DFB6B2]" />,
+            title: "AWS Certified",
+            description: "Cloud Solutions Architect",
+            date: "2026",
+            iconClassName: "text-[#854F6C]",
+            titleClassName: "text-[#FBE4D8]",
+            className: "[grid-area:stack] hover:-translate-y-10 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-[#522B5B]/30 before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-[#050205]/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
+        },
+        {
+            icon: <Code className="size-4 text-[#DFB6B2]" />,
+            title: "Full Stack Dev",
+            description: "React • Next.js • Node.js",
+            date: "Expert",
+            iconClassName: "text-[#854F6C]",
+            titleClassName: "text-[#FBE4D8]",
+            className: "[grid-area:stack] translate-x-16 translate-y-10 hover:-translate-y-1 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-[#522B5B]/30 before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-[#050205]/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
+        },
+        {
+            icon: <Sparkles className="size-4 text-[#DFB6B2]" />,
+            title: "3D Artist",
+            description: "Blender • Unreal Engine 5",
+            date: "Creative",
+            iconClassName: "text-[#854F6C]",
+            titleClassName: "text-[#FBE4D8]",
+            className: "[grid-area:stack] translate-x-32 translate-y-20 hover:translate-y-10",
+        },
+    ];
+
     return (
         <section ref={comp} className="skills-section relative z-10 py-20 overflow-hidden">
             <h2 className="skills-header text-4xl md:text-6xl font-bold text-[#FBE4D8] mb-16 text-center tracking-tighter text-shimmer px-4">
@@ -150,6 +182,11 @@ export default function Skills() {
                         ))}
                     </div>
                 </div>
+            </div>
+
+            {/* Achievement Cards */}
+            <div className="w-full flex justify-center relative z-10 mt-20">
+                <DisplayCards cards={achievementCards} />
             </div>
         </section>
     );
