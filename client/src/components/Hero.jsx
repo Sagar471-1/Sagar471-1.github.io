@@ -13,7 +13,7 @@ export default function Hero() {
     const [isDeleting, setIsDeleting] = React.useState(false);
     const [trailText, setTrailText] = React.useState("");
 
-    const roles = ["Cloud Developer", "3D Animator", "UI/UX Designer"];
+    const roles = React.useMemo(() => ["Cloud Developer", "3D Animator", "UI/UX Designer"], []);
 
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
@@ -97,7 +97,7 @@ export default function Hero() {
         }, typingSpeed);
 
         return () => clearTimeout(timer);
-    }, [displayText, isDeleting, roleIndex]);
+    }, [displayText, isDeleting, roleIndex, roles]);
 
     const scrollToSection = (selector) => {
         const element = document.querySelector(selector);

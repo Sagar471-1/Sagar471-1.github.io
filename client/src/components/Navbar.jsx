@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
-import { HiHome, HiUser, HiCode, HiBriefcase } from 'react-icons/hi';
+import { HiHome, HiUser, HiCode, HiBriefcase, HiMail } from 'react-icons/hi';
 import { cn } from '../lib/utils';
 import SkyToggle from './ui/sky-toggle';
 import { useTheme } from '../context/ThemeContext';
@@ -14,6 +14,7 @@ const navItems = [
     { name: 'About', section: '.about-section', icon: HiUser },
     { name: 'Skills', section: '.skills-section', icon: HiCode },
     { name: 'Work', section: '.work-section', icon: HiBriefcase },
+    { name: 'Contact', section: '.contact-section', icon: HiMail },
 ];
 
 export default function Navbar() {

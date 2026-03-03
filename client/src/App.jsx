@@ -14,7 +14,6 @@ import { useTheme } from './context/ThemeContext';
 import Contact from './components/Contact';
 
 function App() {
-    const [loading, setLoading] = useState(false);
     const [showSplash, setShowSplash] = useState(true);
     const { isDayMode } = useTheme();
 
@@ -66,7 +65,7 @@ function App() {
                 <Hero />
                 <About />
                 <Skills />
-                {!loading && <Work projects={projects} />}
+                <Work projects={projects} />
                 <ZoomParallax images={parallaxImages} />
                 <AngledMarquee />
                 <Contact />

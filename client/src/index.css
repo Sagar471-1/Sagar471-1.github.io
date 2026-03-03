@@ -426,13 +426,25 @@ body {
     animation: scanline 8s linear infinite;
 }
 
-/* Disable all animations in night mode */
+/* Disable decorative animations in night mode, but preserve hover transitions */
 .no-animations *,
 .no-animations *::before,
 .no-animations *::after {
     animation-play-state: paused !important;
     animation: none !important;
-    transition: none !important;
+}
+
+/* Preserve hover/focus transitions for interactive elements */
+.no-animations a,
+.no-animations button,
+.no-animations [class*="hover:"],
+.no-animations .bio-card > div,
+.no-animations .stat-card > div,
+.no-animations .stat-card .absolute,
+.no-animations .theme-switch *,
+.no-animations nav *,
+.no-animations .gradient-button {
+    transition: all 0.3s ease !important;
 }
 
 .no-animations canvas {

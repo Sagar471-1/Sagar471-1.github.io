@@ -193,15 +193,6 @@ export default function About() {
                 <div ref={bioCardsRef} className="lg:col-span-3 space-y-5 bio-cards-container">
                     <div className="bio-card relative group will-change-transform">
                         <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-2xl p-8 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#522B5B]/20">
-                            <GlowingEffect
-                                spread={45}
-                                glow={true}
-                                disabled={false}
-                                proximity={70}
-                                inactiveZone={0.01}
-                                borderWidth={2}
-                                movementDuration={0.3}
-                            />
                             <div className="relative z-10">
                                 <p className="text-[#FBE4D8]/90 text-lg leading-relaxed">
                                     Passionate <span className="text-[#DFB6B2] font-semibold">Cloud Developer</span> from{' '}
@@ -213,15 +204,6 @@ export default function About() {
 
                     <div className="bio-card relative group will-change-transform">
                         <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-2xl p-8 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#854F6C]/20">
-                            <GlowingEffect
-                                spread={45}
-                                glow={true}
-                                disabled={false}
-                                proximity={70}
-                                inactiveZone={0.01}
-                                borderWidth={2}
-                                movementDuration={0.3}
-                            />
                             <div className="relative z-10">
                                 <p className="text-[#FBE4D8]/90 text-lg leading-relaxed">
                                     Expert in <span className="text-[#DFB6B2] font-semibold">React, Next.js, and 3D Web Graphics</span> with a deep interest in{' '}
@@ -233,15 +215,6 @@ export default function About() {
 
                     <div className="bio-card relative group will-change-transform">
                         <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-2xl p-8 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#DFB6B2]/20">
-                            <GlowingEffect
-                                spread={45}
-                                glow={true}
-                                disabled={false}
-                                proximity={70}
-                                inactiveZone={0.01}
-                                borderWidth={2}
-                                movementDuration={0.3}
-                            />
                             <div className="relative z-10">
                                 <p className="text-[#FBE4D8]/90 text-lg leading-relaxed">
                                     Currently developing <span className="text-[#DFB6B2] font-semibold">Advanced Portfolio Systems</span> and exploring{' '}
@@ -258,15 +231,6 @@ export default function About() {
                 <div className="stat-card group relative overflow-hidden will-change-transform">
                     <div className="absolute -inset-0.5 bg-gradient-to-r from-[#522B5B] to-[#854F6C] rounded-3xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"></div>
                     <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-3xl p-10 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:scale-105">
-                        <GlowingEffect
-                            spread={50}
-                            glow={true}
-                            disabled={false}
-                            proximity={70}
-                            inactiveZone={0.01}
-                            borderWidth={2}
-                            movementDuration={0.3}
-                        />
                         <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-[#522B5B]/30 to-transparent rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
                         <div className="relative z-10 text-center">
                             <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FBE4D8] to-[#DFB6B2] mb-3">2+</div>
@@ -278,18 +242,9 @@ export default function About() {
                 <div className="stat-card group relative overflow-hidden will-change-transform">
                     <div className="absolute -inset-0.5 bg-gradient-to-r from-[#854F6C] to-[#DFB6B2] rounded-3xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"></div>
                     <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-3xl p-10 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:scale-105">
-                        <GlowingEffect
-                            spread={50}
-                            glow={true}
-                            disabled={false}
-                            proximity={70}
-                            inactiveZone={0.01}
-                            borderWidth={2}
-                            movementDuration={0.3}
-                        />
                         <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-[#854F6C]/30 to-transparent rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
                         <div className="relative z-10 text-center">
-                            <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FBE4D8] to-[#DFB6B2] mb-3">3</div>
+                            <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FBE4D8] to-[#DFB6B2] mb-3">4</div>
                             <div className="text-sm text-[#DFB6B2] uppercase tracking-widest font-semibold">Projects</div>
                         </div>
                     </div>
@@ -298,15 +253,6 @@ export default function About() {
                 <div className="stat-card group relative overflow-hidden will-change-transform">
                     <div className="absolute -inset-0.5 bg-gradient-to-r from-[#DFB6B2] to-[#522B5B] rounded-3xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"></div>
                     <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-3xl p-10 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:scale-105">
-                        <GlowingEffect
-                            spread={50}
-                            glow={true}
-                            disabled={false}
-                            proximity={70}
-                            inactiveZone={0.01}
-                            borderWidth={2}
-                            movementDuration={0.3}
-                        />
                         <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-[#DFB6B2]/30 to-transparent rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
                         <div className="relative z-10 text-center">
                             <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FBE4D8] to-[#DFB6B2] mb-3">24+</div>

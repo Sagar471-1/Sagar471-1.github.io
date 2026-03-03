@@ -32,6 +32,8 @@ export function ZoomParallax({ images }) {
                                 <img
                                     src={src}
                                     alt={alt || `Parallax image ${index + 1}`}
+                                    loading="lazy"
+                                    decoding="async"
                                     className="h-full w-full object-cover"
                                 />
                             </div>
