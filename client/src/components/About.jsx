@@ -115,11 +115,11 @@ export default function About() {
     }, []);
 
     return (
-        <section ref={comp} className="about-section min-h-screen flex flex-col items-center justify-center px-4 md:px-20 relative z-10 py-32 overflow-hidden bg-gradient-to-br from-[#522B5B]/10 via-[#150B1F]/20 to-[#854F6C]/10 rounded-3xl mx-4 md:mx-8 backdrop-blur-sm">
+        <section ref={comp} className="about-section min-h-screen flex flex-col items-center justify-center px-4 md:px-20 relative z-10 py-32 overflow-hidden bg-gradient-to-br from-[#522B5B]/10 via-[#150B1F]/20 to-[#854F6C]/10 rounded-3xl mx-4 md:mx-8 backdrop-blur-[2px] will-change-transform">
             {/* Animated Background Elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#522B5B]/10 rounded-full blur-3xl animate-pulse"></div>
-                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#854F6C]/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#522B5B]/10 rounded-full blur-2xl animate-pulse will-change-opacity"></div>
+                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#854F6C]/10 rounded-full blur-2xl animate-pulse will-change-opacity" style={{ animationDelay: '1s' }}></div>
             </div>
 
             {/* Section Header */}
@@ -139,7 +139,7 @@ export default function About() {
                         <div className="absolute -inset-2 bg-gradient-to-r from-[#522B5B] via-[#854F6C] to-[#DFB6B2] rounded-3xl blur-lg opacity-60 group-hover:opacity-100 transition-all duration-700 animate-pulse"></div>
 
                         {/* Profile Card Container */}
-                        <div className="relative bg-[#150B1F]/60 backdrop-blur-xl border border-[#522B5B]/30 rounded-3xl p-8 shadow-2xl">
+                        <div className="relative bg-[#150B1F]/60 backdrop-blur-md border border-[#522B5B]/30 rounded-3xl p-8 shadow-2xl will-change-transform">
                             <GlowingEffect
                                 spread={50}
                                 glow={true}
@@ -154,7 +154,7 @@ export default function About() {
                             <div className="flex justify-center mb-6">
                                 <div className="relative">
                                     <div className="absolute -inset-3 bg-gradient-to-r from-[#522B5B] via-[#854F6C] to-[#DFB6B2] rounded-full blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
-                                    <div className="profile-circle relative w-32 h-32 rounded-full bg-gradient-to-br from-[#522B5B] via-[#854F6C] to-[#DFB6B2] flex items-center justify-center text-5xl font-bold text-[#FBE4D8] shadow-2xl transform hover:scale-110 transition-transform duration-300">
+                                    <div className="profile-circle relative w-32 h-32 rounded-full bg-gradient-to-br from-[#522B5B] via-[#854F6C] to-[#DFB6B2] flex items-center justify-center text-5xl font-bold text-[#FBE4D8] shadow-2xl transform hover:scale-110 transition-transform duration-300 will-change-transform">
                                         A
                                     </div>
                                 </div>
@@ -191,8 +191,8 @@ export default function About() {
 
                 {/* Right Column - Enhanced Bio Cards */}
                 <div ref={bioCardsRef} className="lg:col-span-3 space-y-5 bio-cards-container">
-                    <div className="bio-card relative group">
-                        <div className="relative bg-[#150B1F]/50 backdrop-blur-xl border border-[#522B5B]/30 rounded-2xl p-8 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#522B5B]/20">
+                    <div className="bio-card relative group will-change-transform">
+                        <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-2xl p-8 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#522B5B]/20">
                             <GlowingEffect
                                 spread={45}
                                 glow={true}
@@ -211,8 +211,8 @@ export default function About() {
                         </div>
                     </div>
 
-                    <div className="bio-card relative group">
-                        <div className="relative bg-[#150B1F]/50 backdrop-blur-xl border border-[#522B5B]/30 rounded-2xl p-8 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#854F6C]/20">
+                    <div className="bio-card relative group will-change-transform">
+                        <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-2xl p-8 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#854F6C]/20">
                             <GlowingEffect
                                 spread={45}
                                 glow={true}
@@ -231,8 +231,8 @@ export default function About() {
                         </div>
                     </div>
 
-                    <div className="bio-card relative group">
-                        <div className="relative bg-[#150B1F]/50 backdrop-blur-xl border border-[#522B5B]/30 rounded-2xl p-8 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#DFB6B2]/20">
+                    <div className="bio-card relative group will-change-transform">
+                        <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-2xl p-8 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#DFB6B2]/20">
                             <GlowingEffect
                                 spread={45}
                                 glow={true}
@@ -255,9 +255,9 @@ export default function About() {
 
             {/* Enhanced Stats Container */}
             <div className="stats-container w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-8 mb-24 relative z-10">
-                <div className="stat-card group relative overflow-hidden">
+                <div className="stat-card group relative overflow-hidden will-change-transform">
                     <div className="absolute -inset-0.5 bg-gradient-to-r from-[#522B5B] to-[#854F6C] rounded-3xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"></div>
-                    <div className="relative bg-[#150B1F]/50 backdrop-blur-xl border border-[#522B5B]/30 rounded-3xl p-10 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:scale-105">
+                    <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-3xl p-10 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:scale-105">
                         <GlowingEffect
                             spread={50}
                             glow={true}
@@ -275,9 +275,9 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="stat-card group relative overflow-hidden">
+                <div className="stat-card group relative overflow-hidden will-change-transform">
                     <div className="absolute -inset-0.5 bg-gradient-to-r from-[#854F6C] to-[#DFB6B2] rounded-3xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"></div>
-                    <div className="relative bg-[#150B1F]/50 backdrop-blur-xl border border-[#522B5B]/30 rounded-3xl p-10 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:scale-105">
+                    <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-3xl p-10 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:scale-105">
                         <GlowingEffect
                             spread={50}
                             glow={true}
@@ -295,9 +295,9 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="stat-card group relative overflow-hidden">
+                <div className="stat-card group relative overflow-hidden will-change-transform">
                     <div className="absolute -inset-0.5 bg-gradient-to-r from-[#DFB6B2] to-[#522B5B] rounded-3xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"></div>
-                    <div className="relative bg-[#150B1F]/50 backdrop-blur-xl border border-[#522B5B]/30 rounded-3xl p-10 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:scale-105">
+                    <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-3xl p-10 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:scale-105">
                         <GlowingEffect
                             spread={50}
                             glow={true}

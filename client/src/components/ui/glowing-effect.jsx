@@ -86,18 +86,33 @@ const GlowingEffect = memo(
         useEffect(() => {
             if (disabled) return;
 
+            const observer = new IntersectionObserver(
+                ([entry]) => {
+                    if (entry.isIntersecting) {
+                        window.addEventListener("scroll", handleScroll, { passive: true });
+                        document.body.addEventListener("pointermove", handlePointerMove, {
+                            passive: true,
+                        });
+                    } else {
+                        window.removeEventListener("scroll", handleScroll);
+                        document.body.removeEventListener("pointermove", handlePointerMove);
+                    }
+                },
+                { threshold: 0 }
+            );
+
+            if (containerRef.current) {
+                observer.observe(containerRef.current);
+            }
+
             const handleScroll = () => handleMove();
             const handlePointerMove = (e) => handleMove(e);
-
-            window.addEventListener("scroll", handleScroll, { passive: true });
-            document.body.addEventListener("pointermove", handlePointerMove, {
-                passive: true,
-            });
 
             return () => {
                 if (animationFrameRef.current) {
                     cancelAnimationFrame(animationFrameRef.current);
                 }
+                observer.disconnect();
                 window.removeEventListener("scroll", handleScroll);
                 document.body.removeEventListener("pointermove", handlePointerMove);
             };
