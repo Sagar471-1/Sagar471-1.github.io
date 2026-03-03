@@ -29,16 +29,18 @@ Single-page React 18 portfolio app. All source lives under `client/src/`.
 
 **Entry flow:** `main.jsx` → `ThemeProvider` → `App.jsx`
 
-**App.jsx** composes page sections in order: `LogoSplash` → `Background3D` + `Navbar` → `Hero` → `About` → `Skills` → `Work` → `ZoomParallax` → `AngledMarquee` → `AnimatedFooter`
+**App.jsx** composes page sections in order: `LogoSplash` → `Background3D` (lazy-loaded) + `Navbar` → `Hero` → `About` → `Skills` → `Work` → `ZoomParallax` → `AngledMarquee` → `Contact` → `AnimatedFooter`
 
 **Key layers:**
 - `components/` — Page sections (Hero, About, Skills, Work, Contact) and visual effects (Background3D, LogoSplash, AngledMarquee, ParallaxGallery, VortexBackground, Preloader)
-- `components/ui/` — Reusable UI primitives (tubelight-navbar, display-cards, gradient-button, sky-toggle, glowing-effect, atc-shader, zoom-parallax)
+- `components/ui/` — Reusable UI primitives (tubelight-navbar, display-cards, gradient-button, sky-toggle, glowing-effect, magnetic, atc-shader, zoom-parallax)
 - `context/ThemeContext.jsx` — Day/night toggle via React Context (`useTheme` hook). Day mode = animations on; toggling off adds `no-animations` class to root
 - `data/projects.js` — Project data array (id, title, description, tech, image)
 - `lib/utils.js` — `cn()` helper for merging class names
 
 **Animation stack:** GSAP (`@gsap/react`), Framer Motion, and Three.js (`@react-three/fiber` + `@react-three/drei`) are all used. Components mix these freely.
+
+**Icons:** Both `react-icons` and `lucide-react` are used across components.
 
 **Styling:** Tailwind CSS 3 with a custom dark color palette defined in `tailwind.config.js` (background, surface, primary/champagne, secondary/rose, accent/mauve, and `theme-*` variants). Font: Inter. Some components also use styled-components.
 
