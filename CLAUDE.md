@@ -21,7 +21,7 @@ No test framework is configured.
 
 Pushes to `main` auto-deploy via GitHub Actions (`.github/workflows/deploy.yml`):
 build → copy root `CNAME` into `dist/` → publish `client/dist/` to `gh-pages` branch.
-Custom domain: `aksh21h.me`.
+Custom domain: `sagar471-1.github.io`.
 
 ## Architecture
 

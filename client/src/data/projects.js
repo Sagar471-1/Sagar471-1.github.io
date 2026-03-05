@@ -1,38 +1,30 @@
 export const projects = [
     {
         id: 1,
-        title: "Mark4-Bot",
-        description: "Tactical Windows Remote Management Bot with System Telemetry, UMS Automation, and Gemini AI integration.",
-        tech: ["Python", "Gemini AI", "Windows API", "UMS Automation", "Telegram API"],
-        image: "https://placehold.co/600x400/050110/FBE4D8",
-        github: "https://github.com/aksh00001/Mark4-Bot",
-        link: "https://github.com/aksh00001/Mark4-Bot"
+        title: "CPU Scheduler",
+        description: "A Python-based simulator that models CPU process scheduling using FCFS, SJF, Round Robin, and priority algorithms with interactive visualizations.",
+        tech: ["Python", "Pandas", "NumPy", "Streamlit"],
+        image: "https://placehold.co/600x400/050110/FBE4D8?text=CPU+Scheduler",
+        github: "https://github.com/Sagar471-1",
+        link: "https://github.com/Sagar471-1"
     },
     {
         id: 2,
-        title: "CPU Scheduler",
-        description: "An advanced implementation of energy-efficient CPU scheduling algorithms focused on power optimization and core allocation.",
-        tech: ["C++", "OS Architecture", "Optimization"],
-        image: "/cpu_scheduler_preview_1772267471236.png",
-        github: "https://github.com/aksh00001/Energy-Efficient-CPU-Scheduling-Algorithm",
-        link: "https://github.com/aksh00001/Energy-Efficient-CPU-Scheduling-Algorithm"
+        title: "Loan Defaulter EDA",
+        description: "End-to-end data preprocessing and statistical analysis to identify high-impact features influencing loan default risk patterns.",
+        tech: ["Python", "Pandas", "Matplotlib", "Seaborn"],
+        image: "https://placehold.co/600x400/050110/FBE4D8?text=Loan+Defaulter+EDA",
+        github: "https://github.com/Sagar471-1",
+        link: "https://github.com/Sagar471-1"
     },
     {
         id: 3,
-        title: "Nexus Shooter",
-        description: "A high-performance browser-based space shooter featuring vibrant nebulae, particle systems, and kinetic gameplay.",
-        tech: ["JavaScript", "Vite", "Canvas API", "GLSL"],
-        image: "/space_shooter_preview_1772267486028.png",
-        github: "https://github.com/aksh00001/space-shooter-game",
-        link: "https://aksh00001.github.io/space-shooter-game/"
-    },
-    {
-        id: 4,
-        title: "Blender Motion",
-        description: "Cinematic 3D animation and modeling project exploring humanoid robotics and cyberpunk environmental lighting.",
-        tech: ["Blender", "PowerShell", "Rendering", "3D Modeling"],
-        image: "https://placehold.co/600x400/050110/FBE4D8?text=Blender+Motion",
-        github: "https://github.com/aksh00001/blender-animation",
-        link: "https://github.com/aksh00001/blender-animation"
+        title: "Feel the Vibe AI",
+        description: "A sentiment classification system using NLP techniques to categorize text into positive, negative, and neutral sentiments.",
+        tech: ["Python", "Pandas", "NLP", "Lovable.ai"],
+        image: "https://placehold.co/600x400/050110/FBE4D8?text=Feel+the+Vibe+AI",
+        github: "https://github.com/Sagar471-1",
+        link: "https://github.com/Sagar471-1"
     }
 ];
+

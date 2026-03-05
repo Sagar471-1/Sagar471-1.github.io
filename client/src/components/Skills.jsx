@@ -16,33 +16,21 @@ import DisplayCards from './ui/display-cards';
 gsap.registerPlugin(ScrollTrigger);
 
 const technologies = [
+    { name: "C++", icon: <SiCplusplus className="text-[#00599C]" />, glow: "#00599C" },
+    { name: "Python", icon: <FaPython className="text-[#3776AB]" />, glow: "#3776AB" },
+    { name: "SQL", icon: <SiPostgresql className="text-[#4169E1]" />, glow: "#4169E1" },
+    { name: "Java", icon: <FaJava className="text-[#007396]" />, glow: "#007396" },
     { name: "HTML5", icon: <FaHtml5 className="text-[#E34F26]" />, glow: "#E34F26" },
     { name: "CSS3", icon: <FaCss3Alt className="text-[#1572B6]" />, glow: "#1572B6" },
-    { name: "JavaScript", icon: <FaJs className="text-[#F7DF1E]" />, glow: "#F7DF1E" },
-    { name: "Python", icon: <FaPython className="text-[#3776AB]" />, glow: "#3776AB" },
-    { name: "C++", icon: <SiCplusplus className="text-[#00599C]" />, glow: "#00599C" },
-    { name: "Java", icon: <FaJava className="text-[#007396]" />, glow: "#007396" },
-    { name: "React", icon: <FaReact className="text-[#61DAFB]" />, glow: "#61DAFB" },
-    { name: "Next.js", icon: <SiNextdotjs className="text-white" />, glow: "#FFFFFF" },
-    { name: "Node.js", icon: <FaNodeJs className="text-[#339933]" />, glow: "#339933" },
-    { name: "Blender", icon: <SiBlender className="text-[#F5792A]" />, glow: "#F5792A" },
-    { name: "Git", icon: <FaGitAlt className="text-[#F05032]" />, glow: "#F05032" },
-    { name: "GitHub", icon: <FaGithub className="text-white" />, glow: "#FFFFFF" },
 ];
 
 const technologies2 = [
-    { name: "AWS", icon: <FaAws className="text-[#FF9900]" />, glow: "#FF9900" },
-    { name: "Linux", icon: <FaLinux className="text-[#FCC624]" />, glow: "#FCC624" },
-    { name: "Docker", icon: <FaDocker className="text-[#2496ED]" />, glow: "#2496ED" },
-    { name: "Unreal Engine 5", icon: <SiUnrealengine className="text-white" />, glow: "#FFFFFF" },
-    { name: "PostgreSQL", icon: <SiPostgresql className="text-[#4169E1]" />, glow: "#4169E1" },
-    { name: "GraphQL", icon: <SiGraphql className="text-[#E10098]" />, glow: "#E10098" },
-    { name: "TypeScript", icon: <SiTypescript className="text-[#3178C6]" />, glow: "#3178C6" },
-    { name: "Tailwind", icon: <SiTailwindcss className="text-[#06B6D4]" />, glow: "#06B6D4" },
-    { name: "Figma", icon: <FaFigma className="text-[#F24E1E]" />, glow: "#F24E1E" },
-    { name: "Unity", icon: <FaUnity className="text-white" />, glow: "#FFFFFF" },
-    { name: "Blockchain", icon: <FaBitcoin className="text-[#F7931A]" />, glow: "#F7931A" },
-    { name: "Web3", icon: <FaGlobe className="text-[#F16822]" />, glow: "#F16822" }
+    { name: "Pandas", icon: <FaPython className="text-[#150458]" />, glow: "#150458" },
+    { name: "NumPy", icon: <FaPython className="text-[#4D77CF]" />, glow: "#4D77CF" },
+    { name: "Scikit-learn", icon: <FaPython className="text-[#F7931E]" />, glow: "#F7931E" },
+    { name: "Matplotlib", icon: <FaPython className="text-[#11557C]" />, glow: "#11557C" },
+    { name: "GitHub", icon: <FaGithub className="text-white" />, glow: "#FFFFFF" },
+    { name: "Power BI", icon: <FaPython className="text-[#F2C811]" />, glow: "#F2C811" },
 ];
 
 export default function Skills() {
@@ -121,17 +109,17 @@ export default function Skills() {
     const achievementCards = [
         {
             icon: <Award className="size-4 text-[#DFB6B2]" />,
-            title: "AWS Certified",
-            description: "Cloud Solutions Architect",
-            date: "2026",
+            title: "HackerRank Badge",
+            description: "Problem Solving (Basic)",
+            date: "2024",
             iconClassName: "text-[#854F6C]",
             titleClassName: "text-[#FBE4D8]",
             className: "[grid-area:stack] hover:-translate-y-10 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-[#522B5B]/30 before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-[#050205]/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
         },
         {
             icon: <Code className="size-4 text-[#DFB6B2]" />,
-            title: "Full Stack Dev",
-            description: "React • Next.js • Node.js",
+            title: "DSA Expert",
+            description: "Solved 200+ LeetCode problems",
             date: "Expert",
             iconClassName: "text-[#854F6C]",
             titleClassName: "text-[#FBE4D8]",
@@ -139,8 +127,8 @@ export default function Skills() {
         },
         {
             icon: <Sparkles className="size-4 text-[#DFB6B2]" />,
-            title: "3D Artist",
-            description: "Blender • Unreal Engine 5",
+            title: "ML Enthusiast",
+            description: "Scikit-learn • Matplotlib",
             date: "Creative",
             iconClassName: "text-[#854F6C]",
             titleClassName: "text-[#FBE4D8]",

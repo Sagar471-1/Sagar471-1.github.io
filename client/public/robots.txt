@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aksh21h.me/sitemap.xml
+Sitemap: https://sagar471-1.github.io/sitemap.xml

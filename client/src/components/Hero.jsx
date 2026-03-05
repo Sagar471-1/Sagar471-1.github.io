@@ -13,7 +13,7 @@ export default function Hero() {
     const [isDeleting, setIsDeleting] = React.useState(false);
     const [trailText, setTrailText] = React.useState("");
 
-    const roles = React.useMemo(() => ["Cloud Developer", "3D Animator", "UI/UX Designer"], []);
+    const roles = React.useMemo(() => ["Data Analyst", "Python Developer", "ML Enthusiast"], []);
 
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
@@ -128,7 +128,7 @@ export default function Hero() {
                         ></motion.div>
                         <img
                             src={profileImage}
-                            alt="Akshdeep Singh"
+                            alt="Sagar Kumar Prajapati"
                             className="relative w-full h-full rounded-full object-cover border-2 border-[#150B1F] shadow-xl z-10"
                         />
                     </div>
@@ -150,7 +150,7 @@ export default function Hero() {
                             filter: 'drop-shadow(0 0 10px rgba(223, 182, 178, 0.4))'
                         }}
                     >
-                        Akshdeep Singh
+                        Sagar Kumar Prajapati
                     </span>
                 </h1>
 
@@ -163,9 +163,9 @@ export default function Hero() {
 
                 {/* Bio */}
                 <p className="hero-content text-base md:text-lg text-[#FBE4D8]/70 text-center max-w-2xl mb-10 leading-relaxed font-light z-10">
-                    Architecting <span className="text-[#DFB6B2] font-semibold">Scalable Cloud Infrastructures</span> & crafting
-                    <span className="text-[#DFB6B2] font-semibold"> Immersive Visual Experiences</span>.
-                    Merging complex code with artistic precision.
+                    Extracting <span className="text-[#DFB6B2] font-semibold">Actionable Insights</span> & building
+                    <span className="text-[#DFB6B2] font-semibold"> Intelligent Solutions</span>.
+                    Bridging data and decision-making with precision.
                 </p>
 
                 {/* Action Buttons */}

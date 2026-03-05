@@ -32,8 +32,8 @@ export default function AnimatedFooter() {
             {/* Footer Content */}
             <div className="relative z-10 h-full flex flex-col justify-end p-8 md:p-12">
                 <div className="flex justify-between items-end text-white/60 text-sm font-light tracking-wider">
-                    <p>Design by Akshdeep Singh</p>
-                    <p>Development by Akshdeep Singh</p>
+                    <p>Design by Sagar Kumar Prajapati</p>
+                    <p>Development by Sagar Kumar Prajapati</p>
                 </div>
             </div>
         </footer>

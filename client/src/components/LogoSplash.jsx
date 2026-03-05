@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import logoImage from '../assets/logo.png';
+import logoImage from '../assets/logo.jpg';
 
 export default function LogoSplash({ onComplete }) {
     const leftHalfRef = useRef(null);
@@ -104,14 +104,14 @@ export default function LogoSplash({ onComplete }) {
                 >
                     <img
                         src={logoImage}
-                        alt="Akshdeep Singh Logo"
+                        alt="Sagar Kumar Prajapati Logo"
                         className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto object-contain"
                         style={{
                             filter: 'drop-shadow(0 0 8px rgba(251, 228, 216, 0.6)) drop-shadow(0 0 16px rgba(251, 228, 216, 0.4)) drop-shadow(0 0 24px rgba(251, 228, 216, 0.2))'
                         }}
                     />
-                    <div className="mt-6 text-xl md:text-2xl font-semibold text-[#FBE4D8] tracking-widest">
-                        AKSHDEEP SINGH
+                    <div className="mt-6 text-xl md:text-2xl font-semibold text-[#FBE4D8] tracking-widest uppercase">
+                        SAGAR KUMAR PRAJAPATI
                     </div>
 
                     {/* Progress Bar */}
@@ -143,14 +143,14 @@ export default function LogoSplash({ onComplete }) {
                 <div className="relative z-10 text-center">
                     <img
                         src={logoImage}
-                        alt="Akshdeep Singh Logo"
+                        alt="Sagar Kumar Prajapati Logo"
                         className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto object-contain"
                         style={{
                             filter: 'drop-shadow(0 0 8px rgba(251, 228, 216, 0.6)) drop-shadow(0 0 16px rgba(251, 228, 216, 0.4)) drop-shadow(0 0 24px rgba(251, 228, 216, 0.2))'
                         }}
                     />
-                    <div className="mt-6 text-xl md:text-2xl font-semibold text-[#FBE4D8] tracking-widest">
-                        AKSHDEEP SINGH
+                    <div className="mt-6 text-xl md:text-2xl font-semibold text-[#FBE4D8] tracking-widest uppercase">
+                        SAGAR KUMAR PRAJAPATI
                     </div>
 
                     {/* Progress Bar (duplicate - will fade with left half) */}

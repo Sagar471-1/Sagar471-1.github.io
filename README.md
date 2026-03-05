@@ -7,7 +7,7 @@ A modern, interactive portfolio website built with React and Three.js, featuring
 
 ## 🌐 Live Demo
 
-Visit the live site: [https://aksh00001.github.io](https://aksh00001.github.io)
+Visit the live site: [https://sagar471-1.github.io](https://sagar471-1.github.io)
 
 ## ✨ Features
 
@@ -84,8 +84,8 @@ Portfolio/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/aksh00001/aksh00001.github.io.git
-   cd aksh00001.github.io
+   git clone https://github.com/Sagar471-1/Sagar471-1.github.io.git
+   cd Sagar471-1.github.io
    ```
 
 2. **Install dependencies**
@@ -146,7 +146,7 @@ The site automatically deploys when you push to the `main` branch:
 1. **GitHub Actions Workflow** (`.github/workflows/deploy.yml`) triggers on push
 2. **Build Process**: Installs dependencies and builds the project
 3. **Deploy**: Publishes the `client/dist` folder to the `gh-pages` branch
-4. **Live Site**: Available at `https://aksh00001.github.io`
+4. **Live Site**: Available at `https://sagar471-1.github.io`
 
 ### Manual Deployment
 
@@ -220,12 +220,10 @@ export const projects = [
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 👤 Author
+**Sagar Kumar Prajapati**
 
-**Akshu**
-
-- GitHub: [@aksh00001](https://github.com/aksh00001)
-- Portfolio: [https://aksh00001.github.io](https://aksh00001.github.io)
+- GitHub: [@Sagar471-1](https://github.com/Sagar471-1)
+- Portfolio: [https://sagar471-1.github.io](https://sagar471-1.github.io)
 
 ## 🤝 Contributing
 

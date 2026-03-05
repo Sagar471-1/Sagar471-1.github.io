@@ -68,7 +68,7 @@ export default function Navbar() {
                             display: 'inline-block'
                         }}
                     >
-                        aksh21h.me
+                        Sagar
                     </span>
                 </button>
 

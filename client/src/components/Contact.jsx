@@ -129,7 +129,7 @@ export default function Contact() {
 
             addLog('SYSTEM', 'Routing through Gmail Relay...');
             await new Promise(r => setTimeout(r, 1000));
-            addLog('SUCCESS', 'Transmission Dispatched to Akshdeep\'s Inbox.');
+            addLog('SUCCESS', 'Transmission Dispatched to Sagar\'s Inbox.');
 
             setSent(true);
         } catch (error) {
@@ -139,7 +139,7 @@ export default function Contact() {
                 const triageLabel = TRIAGE_OPTIONS.find(o => o.id === form.triage)?.label || '';
                 const subject = encodeURIComponent(`[${triageLabel}] from ${form.name}`);
                 const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\nTriage: ${triageLabel}\n\nMessage:\n${form.message}`);
-                window.open(`mailto:aksh969696@gmail.com?subject=${subject}&body=${body}`, '_self');
+                window.open(`mailto:sagarprajapati31512@gmail.com?subject=${subject}&body=${body}`, '_self');
 
                 addLog('SUCCESS', 'Local Relay triggered.');
                 setSent(true);
@@ -212,17 +212,17 @@ export default function Contact() {
                                 Reporting a design emergency? Or just want to discuss the next big thing? My sensors are always active.
                             </p>
 
-                            <a href="mailto:aksh969696@gmail.com" className="inline-block text-2xl md:text-3xl font-light text-[#FBE4D8] hover:text-[#DFB6B2] transition-colors duration-300 break-all underline decoration-[#DFB6B2]/20 underline-offset-8">
-                                aksh969696@gmail.com
+                            <a href="mailto:sagarprajapati31512@gmail.com" className="inline-block text-2xl md:text-3xl font-light text-[#FBE4D8] hover:text-[#DFB6B2] transition-colors duration-300 break-all underline decoration-[#DFB6B2]/20 underline-offset-8">
+                                sagarprajapati31512@gmail.com
                             </a>
                         </div>
 
                         <div className="grid grid-cols-2 gap-4">
                             {[
-                                { name: 'GitHub', url: 'https://github.com/aksh00001' },
-                                { name: 'LinkedIn', url: 'https://www.linkedin.com/in/akshdeep-singh-652155355' },
-                                { name: 'Phone', url: 'tel:+917206969059', label: '+91 7206969059' },
-                                { name: 'Instagram', url: 'https://www.instagram.com/akshhhhhh.hh?igsh=MTVlMnV1dm5qZ3g5Zg==' }
+                                { name: 'GitHub', url: 'https://github.com/Sagar471-1' },
+                                { name: 'LinkedIn', url: 'https://linkedin.com/in/sagar-prajapati31512' },
+                                { name: 'Phone', url: 'tel:+917878978590', label: '+91 7878978590' },
+                                { name: 'Instagram', url: '#' }
                             ].map((social) => (
                                 <a
                                     key={social.name}
@@ -369,7 +369,7 @@ export default function Contact() {
                 </div>
 
                 <footer className="mt-32 pt-12 border-t border-[#FBE4D8]/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-mono text-[#FBE4D8]/20 tracking-widest uppercase">
-                    <p>&copy; 2026 Akshdeep Singh // Autonomous Collaboration Nexus</p>
+                    <p>&copy; 2026 Sagar Kumar Prajapati // Autonomous Collaboration Nexus</p>
                     <div className="flex gap-8">
                         <span>Latency: 24ms</span>
                         <span>Uptime: 99.98%</span>

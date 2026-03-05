@@ -155,27 +155,27 @@ export default function About() {
                                 <div className="relative">
                                     <div className="absolute -inset-3 bg-gradient-to-r from-[#522B5B] via-[#854F6C] to-[#DFB6B2] rounded-full blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
                                     <div className="profile-circle relative w-32 h-32 rounded-full bg-gradient-to-br from-[#522B5B] via-[#854F6C] to-[#DFB6B2] flex items-center justify-center text-5xl font-bold text-[#FBE4D8] shadow-2xl transform hover:scale-110 transition-transform duration-300 will-change-transform">
-                                        A
+                                        S
                                     </div>
                                 </div>
                             </div>
 
                             <h3 className="text-3xl font-bold text-[#FBE4D8] mb-3 text-center">
-                                Akshdeep Singh
+                                Sagar Kumar Prajapati
                             </h3>
 
                             <div className="space-y-2 mb-6">
                                 <div className="flex items-center justify-center gap-2 text-[#DFB6B2] text-sm font-medium uppercase tracking-widest">
                                     <Briefcase className="w-4 h-4" />
-                                    <span>Cloud Developer</span>
+                                    <span>Data Analyst</span>
                                 </div>
                                 <div className="flex items-center justify-center gap-2 text-[#854F6C] text-sm font-medium uppercase tracking-widest">
                                     <Sparkles className="w-4 h-4" />
-                                    <span>3D Animator</span>
+                                    <span>Python Developer</span>
                                 </div>
                                 <div className="flex items-center justify-center gap-2 text-[#DFB6B2]/80 text-sm font-medium uppercase tracking-widest">
                                     <GraduationCap className="w-4 h-4" />
-                                    <span>Student</span>
+                                    <span>B.Tech Student</span>
                                 </div>
                             </div>
 
@@ -195,8 +195,7 @@ export default function About() {
                         <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-2xl p-8 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#522B5B]/20">
                             <div className="relative z-10">
                                 <p className="text-[#FBE4D8]/90 text-lg leading-relaxed">
-                                    Passionate <span className="text-[#DFB6B2] font-semibold">Cloud Developer</span> from{' '}
-                                    <span className="text-[#854F6C] font-semibold">Lovely Professional University</span>, specializing in building immersive web experiences and cutting-edge applications.
+                                    Dedicated <span className="text-[#DFB6B2] font-semibold">Data Analyst</span> and <span className="text-[#854F6C] font-semibold">Python Developer</span> at Lovely Professional University, focused on turning raw data into meaningful stories.
                                 </p>
                             </div>
                         </div>
@@ -206,8 +205,7 @@ export default function About() {
                         <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-2xl p-8 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#854F6C]/20">
                             <div className="relative z-10">
                                 <p className="text-[#FBE4D8]/90 text-lg leading-relaxed">
-                                    Expert in <span className="text-[#DFB6B2] font-semibold">React, Next.js, and 3D Web Graphics</span> with a deep interest in{' '}
-                                    <span className="text-[#854F6C] font-semibold">Game Development</span> using Unreal Engine 5 and Blender.
+                                    Specializing in <span className="text-[#DFB6B2] font-semibold">Data Structures and Algorithms</span> with a strong foundation in <span className="text-[#854F6C] font-semibold">Machine Learning</span> and statistical EDA.
                                 </p>
                             </div>
                         </div>
@@ -217,8 +215,7 @@ export default function About() {
                         <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-2xl p-8 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#DFB6B2]/20">
                             <div className="relative z-10">
                                 <p className="text-[#FBE4D8]/90 text-lg leading-relaxed">
-                                    Currently developing <span className="text-[#DFB6B2] font-semibold">Advanced Portfolio Systems</span> and exploring{' '}
-                                    <span className="text-[#854F6C] font-semibold">3D Animation</span> — always pushing the boundaries of what's possible on the web.
+                                    Passionate about <span className="text-[#DFB6B2] font-semibold">C++, Python, and SQL</span> — always striving to optimize algorithms and solve complex problems with efficient code.
                                 </p>
                             </div>
                         </div>
@@ -233,8 +230,8 @@ export default function About() {
                     <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-3xl p-10 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:scale-105">
                         <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-[#522B5B]/30 to-transparent rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
                         <div className="relative z-10 text-center">
-                            <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FBE4D8] to-[#DFB6B2] mb-3">2+</div>
-                            <div className="text-sm text-[#DFB6B2] uppercase tracking-widest font-semibold">Years Experience</div>
+                            <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FBE4D8] to-[#DFB6B2] mb-3">79.6%</div>
+                            <div className="text-sm text-[#DFB6B2] uppercase tracking-widest font-semibold">Intermediate Score</div>
                         </div>
                     </div>
                 </div>
@@ -244,8 +241,8 @@ export default function About() {
                     <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-3xl p-10 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:scale-105">
                         <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-[#854F6C]/30 to-transparent rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
                         <div className="relative z-10 text-center">
-                            <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FBE4D8] to-[#DFB6B2] mb-3">4</div>
-                            <div className="text-sm text-[#DFB6B2] uppercase tracking-widest font-semibold">Projects</div>
+                            <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FBE4D8] to-[#DFB6B2] mb-3">3</div>
+                            <div className="text-sm text-[#DFB6B2] uppercase tracking-widest font-semibold">Key Projects</div>
                         </div>
                     </div>
                 </div>
@@ -255,8 +252,8 @@ export default function About() {
                     <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-3xl p-10 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:scale-105">
                         <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-[#DFB6B2]/30 to-transparent rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
                         <div className="relative z-10 text-center">
-                            <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FBE4D8] to-[#DFB6B2] mb-3">24+</div>
-                            <div className="text-sm text-[#DFB6B2] uppercase tracking-widest font-semibold">Technologies</div>
+                            <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FBE4D8] to-[#DFB6B2] mb-3">12+</div>
+                            <div className="text-sm text-[#DFB6B2] uppercase tracking-widest font-semibold">Skills Mastered</div>
                         </div>
                     </div>
                 </div>
