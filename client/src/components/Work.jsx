@@ -64,7 +64,7 @@ export default function Work({ projects }) {
         <section ref={comp} className="work-section relative z-10 py-20">
             <div className="w-full">
                 <h2 className="work-header text-4xl md:text-6xl font-bold text-[#FBE4D8] mb-20 px-8 md:px-16">
-                    Selected Works
+                    Projects
                 </h2>
 
                 <div className="space-y-6">
