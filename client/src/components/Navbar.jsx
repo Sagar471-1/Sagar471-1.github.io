@@ -13,7 +13,7 @@ const navItems = [
     { name: 'Home', section: '.hero-section', icon: HiHome },
     { name: 'About', section: '.about-section', icon: HiUser },
     { name: 'Skills', section: '.skills-section', icon: HiCode },
-    { name: 'Work', section: '.work-section', icon: HiBriefcase },
+    { name: 'Projects', section: '.work-section', icon: HiBriefcase },
     { name: 'Contact', section: '.contact-section', icon: HiMail },
 ];
 
