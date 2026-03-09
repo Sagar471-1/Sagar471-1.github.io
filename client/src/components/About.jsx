@@ -167,11 +167,11 @@ export default function About() {
                             <div className="space-y-2 mb-6">
                                 <div className="flex items-center justify-center gap-2 text-[#DFB6B2] text-sm font-medium uppercase tracking-widest">
                                     <Briefcase className="w-4 h-4" />
-                                    <span>Data Analyst</span>
+                                    <span>Software Dev Engineer</span>
                                 </div>
                                 <div className="flex items-center justify-center gap-2 text-[#854F6C] text-sm font-medium uppercase tracking-widest">
                                     <Sparkles className="w-4 h-4" />
-                                    <span>Python Developer</span>
+                                    <span>Competitive Programmer</span>
                                 </div>
                                 <div className="flex items-center justify-center gap-2 text-[#DFB6B2]/80 text-sm font-medium uppercase tracking-widest">
                                     <GraduationCap className="w-4 h-4" />
@@ -195,7 +195,7 @@ export default function About() {
                         <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-2xl p-8 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#522B5B]/20">
                             <div className="relative z-10">
                                 <p className="text-[#FBE4D8]/90 text-lg leading-relaxed">
-                                    Dedicated <span className="text-[#DFB6B2] font-semibold">Data Analyst</span> and <span className="text-[#854F6C] font-semibold">Python Developer</span> at Lovely Professional University, focused on turning raw data into meaningful stories.
+                                    Dedicated <span className="text-[#DFB6B2] font-semibold">Software Development Engineer</span> and <span className="text-[#854F6C] font-semibold">Competitive Programmer</span> at Lovely Professional University, focused on building efficient, scalable solutions and architectures.
                                 </p>
                             </div>
                         </div>
@@ -205,7 +205,7 @@ export default function About() {
                         <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-2xl p-8 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#854F6C]/20">
                             <div className="relative z-10">
                                 <p className="text-[#FBE4D8]/90 text-lg leading-relaxed">
-                                    Specializing in <span className="text-[#DFB6B2] font-semibold">Data Structures and Algorithms</span> with a strong foundation in <span className="text-[#854F6C] font-semibold">Machine Learning</span> and statistical EDA.
+                                    Specializing in <span className="text-[#DFB6B2] font-semibold">Data Structures and Algorithms</span> with a strong foundation in <span className="text-[#854F6C] font-semibold">Software Engineering</span> principles and system design.
                                 </p>
                             </div>
                         </div>

@@ -118,8 +118,8 @@ export default function Skills() {
         },
         {
             icon: <Code className="size-4 text-[#DFB6B2]" />,
-            title: "DSA Expert",
-            description: "Solved 200+ LeetCode problems",
+            title: "LeetCode Rated",
+            description: "Rating: 1625 (Top 10%)",
             date: "Expert",
             iconClassName: "text-[#854F6C]",
             titleClassName: "text-[#FBE4D8]",
@@ -127,9 +127,9 @@ export default function Skills() {
         },
         {
             icon: <Sparkles className="size-4 text-[#DFB6B2]" />,
-            title: "ML Enthusiast",
-            description: "Scikit-learn • Matplotlib",
-            date: "Creative",
+            title: "Codeforces",
+            description: "Rating: 1099 (Newbie)",
+            date: "Competitive",
             iconClassName: "text-[#854F6C]",
             titleClassName: "text-[#FBE4D8]",
             className: "[grid-area:stack] translate-x-32 translate-y-20 hover:translate-y-10",

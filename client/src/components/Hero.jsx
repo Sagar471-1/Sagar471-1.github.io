@@ -13,7 +13,7 @@ export default function Hero() {
     const [isDeleting, setIsDeleting] = React.useState(false);
     const [trailText, setTrailText] = React.useState("");
 
-    const roles = React.useMemo(() => ["Data Analyst", "Python Developer", "ML Enthusiast"], []);
+    const roles = React.useMemo(() => ["Software Dev Engineer", "Competitive Programmer", "Full Stack Developer"], []);
 
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
@@ -163,9 +163,9 @@ export default function Hero() {
 
                 {/* Bio */}
                 <p className="hero-content text-base md:text-lg text-[#FBE4D8]/70 text-center max-w-2xl mb-10 leading-relaxed font-light z-10">
-                    Extracting <span className="text-[#DFB6B2] font-semibold">Actionable Insights</span> & building
-                    <span className="text-[#DFB6B2] font-semibold"> Intelligent Solutions</span>.
-                    Bridging data and decision-making with precision.
+                    Building <span className="text-[#DFB6B2] font-semibold">Scalable Applications</span> & solving
+                    <span className="text-[#DFB6B2] font-semibold"> Complex Algorithmic Challenges</span>.
+                    Passionate about clean code and efficient system design.
                 </p>
 
                 {/* Action Buttons */}
