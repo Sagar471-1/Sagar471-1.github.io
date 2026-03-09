@@ -13,7 +13,7 @@ export default function Hero() {
     const [isDeleting, setIsDeleting] = React.useState(false);
     const [trailText, setTrailText] = React.useState("");
 
-    const roles = React.useMemo(() => ["Aspiring SDE", "Competitive Programmer", "Full Stack Developer"], []);
+    const roles = React.useMemo(() => ["Aspiring SDE", "Competitive Programmer"], []);
 
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
