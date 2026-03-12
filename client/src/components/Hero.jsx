@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import profileImage from '../assets/profile.jpg';
 import GradientButton from './ui/gradient-button';
 import Magnetic from './ui/magnetic';
+import { aboutMe } from '../data/portfolioData';
 
 export default function Hero() {
     const comp = useRef();
@@ -13,7 +14,7 @@ export default function Hero() {
     const [isDeleting, setIsDeleting] = React.useState(false);
     const [trailText, setTrailText] = React.useState("");
 
-    const roles = React.useMemo(() => ["Aspiring SDE", "Competitive Programmer"], []);
+    const roles = React.useMemo(() => ["CS Student", "Data Science Enthusiast", "SDE Aspirant"], []);
 
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
@@ -108,6 +109,7 @@ export default function Hero() {
 
     return (
         <section
+            id="home"
             ref={comp}
             className="hero-section h-screen flex flex-col justify-center items-center relative z-10 px-4 pt-16"
             onMouseMove={handleMouseMove}
@@ -163,9 +165,7 @@ export default function Hero() {
 
                 {/* Bio */}
                 <p className="hero-content text-base md:text-lg text-[#FBE4D8]/70 text-center max-w-2xl mb-10 leading-relaxed font-light z-10">
-                    Aspiring to build <span className="text-[#DFB6B2] font-semibold">Scalable Applications</span> & solving
-                    <span className="text-[#DFB6B2] font-semibold"> Complex Algorithmic Challenges</span>.
-                    Focused on mastering clean code and efficient system design.
+                    {aboutMe.description.split('. ')[0]}. {aboutMe.description.split('. ')[1]}.
                 </p>
 
                 {/* Action Buttons */}

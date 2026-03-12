@@ -8,8 +8,13 @@ import AngledMarquee from './components/AngledMarquee';
 import About from './components/About';
 import AnimatedFooter from './components/AnimatedFooter';
 import Skills from './components/Skills';
+import Experience from './components/Experience';
+import Education from './components/Education';
+import Certifications from './components/Certifications';
+import Achievements from './components/Achievements';
+import OpenSource from './components/OpenSource';
 import { ZoomParallax } from './components/ui/zoom-parallax';
-import { projects } from './data/projects';
+import { projects } from './data/portfolioData';
 import { useTheme } from './context/ThemeContext';
 import Contact from './components/Contact';
 
@@ -47,7 +52,7 @@ function App() {
             alt: 'Data visualization',
         },
         {
-            src: 'https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1280&h=720&fit=crop&crop=entropy&auto=format&q=80',
+            src: 'https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1280&h=720&fit=crop&auto=format&q=80',
             alt: 'Creative development',
         },
     ];
@@ -66,6 +71,11 @@ function App() {
                 <About />
                 <Skills />
                 <Work projects={projects} />
+                <Experience />
+                <Education />
+                <Certifications />
+                <Achievements />
+                <OpenSource />
                 <ZoomParallax images={parallaxImages} />
                 <AngledMarquee />
                 <Contact />
