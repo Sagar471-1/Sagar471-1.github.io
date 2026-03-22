@@ -174,7 +174,7 @@ export default function Hero() {
                     </Magnetic>
                     <Magnetic strength={0.2}>
                         <a
-                            href="/resume.pdf"
+                            href="/resume.html"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 px-8 py-4 border border-[#DFB6B2]/40 rounded-full text-[#DFB6B2] text-sm tracking-widest font-semibold hover:bg-[#DFB6B2]/10 hover:border-[#DFB6B2]/70 transition-all duration-300 cursor-pointer"
