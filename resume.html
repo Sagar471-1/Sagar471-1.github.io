@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagar Kumar Prajapati – Resume</title>
+    <style>
+        /* -------- RESET & BASE -------- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 11pt;
+            color: #111;
+            background: #f4f4f4;
+        }
+
+        /* -------- DOWNLOAD BUTTON (hidden when printing) -------- */
+        .download-bar {
+            background: #1a1a2e;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .download-bar span {
+            color: #c9b8e8;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        .btn-download {
+            background: linear-gradient(135deg, #854F6C, #522B5B);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 999px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            letter-spacing: 0.05em;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+        .btn-download:hover { background: linear-gradient(135deg, #9e607f, #6b3a72); transform: scale(1.03); }
+
+        /* -------- RESUME PAPER -------- */
+        .page {
+            background: white;
+            width: 850px;
+            max-width: 100%;
+            margin: 24px auto;
+            padding: 36px 48px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+        }
+
+        /* -------- HEADER -------- */
+        .header-name {
+            font-size: 22pt;
+            font-weight: bold;
+            color: #00008B;
+            border-bottom: 2px solid #00008B;
+            padding-bottom: 4px;
+            margin-bottom: 6px;
+        }
+        .header-contacts {
+            display: flex;
+            justify-content: space-between;
+            font-size: 10pt;
+            margin-bottom: 2px;
+        }
+        .header-contacts a { color: #00008B; text-decoration: none; }
+        .header-contacts .right { text-align: right; }
+
+        /* -------- SECTIONS -------- */
+        .section { margin-top: 14px; }
+        .section-title {
+            font-size: 12pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #00008B;
+            border-bottom: 1.5px solid #00008B;
+            padding-bottom: 2px;
+            margin-bottom: 6px;
+            letter-spacing: 0.04em;
+        }
+
+        /* -------- SKILLS -------- */
+        .skill-row { margin-bottom: 3px; font-size: 10.5pt; }
+        .skill-label { font-weight: bold; }
+
+        /* -------- PROJECTS / EXPERIENCE -------- */
+        .entry { margin-bottom: 10px; }
+        .entry-header { display: flex; justify-content: space-between; align-items: baseline; }
+        .entry-title { font-weight: bold; color: #00008B; font-size: 11pt; }
+        .entry-title a { color: #00008B; text-decoration: none; }
+        .entry-title a:hover { text-decoration: underline; }
+        .entry-date { font-size: 10pt; font-style: italic; white-space: nowrap; margin-left: 8px; }
+        .entry-sub { font-size: 10.5pt; margin-bottom: 2px; }
+        .entry ul { margin-left: 16px; margin-top: 3px; }
+        .entry ul li { margin-bottom: 2px; font-size: 10.5pt; line-height: 1.4; }
+        .tech-line { margin-top: 3px; font-size: 10pt; }
+        .tech-label { font-weight: bold; }
+
+        /* -------- CERTS & ACHIEVEMENTS -------- */
+        .cert-row, .achieve-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 10.5pt;
+            margin-bottom: 3px;
+        }
+        .cert-row a { color: #00008B; text-decoration: none; }
+
+        /* -------- EDUCATION -------- */
+        .edu-entry { margin-bottom: 6px; }
+        .edu-header { display: flex; justify-content: space-between; }
+        .edu-inst { font-weight: bold; color: #00008B; font-size: 11pt; }
+        .edu-loc { font-size: 10pt; font-style: italic; }
+        .edu-degree { font-size: 10.5pt; }
+        .edu-dates { font-size: 10pt; font-style: italic; }
+
+        /* -------- PRINT STYLES -------- */
+        @media print {
+            body { background: white; font-size: 10.5pt; }
+            .download-bar { display: none !important; }
+            .page { margin: 0; padding: 20px 32px; box-shadow: none; width: 100%; max-width: 100%; }
+            @page { margin: 0.6in 0.5in; }
+            a { color: #00008B !important; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Download Bar -->
+<div class="download-bar">
+    <span>📄 Sagar Kumar Prajapati – Resume</span>
+    <button class="btn-download" onclick="window.print()">
+        ⬇ Download PDF
+    </button>
+</div>
+
+<!-- Resume Paper -->
+<div class="page">
+
+    <!-- Header -->
+    <div class="header-name">Sagar Kumar Prajapati</div>
+    <div class="header-contacts">
+        <div class="left">
+            LinkedIn: <a href="https://linkedin.com/in/sagar-prajapati31512" target="_blank">linkedin.com/in/sagar-prajapati31512</a><br>
+            GitHub: <a href="https://github.com/Sagar471-1" target="_blank">github.com/Sagar471-1</a>
+        </div>
+        <div class="right">
+            Email: <a href="mailto:sagarprajapati31512@gmail.com">sagarprajapati31512@gmail.com</a><br>
+            Mobile: +91 7878978590
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+        <div class="section-title">Skills</div>
+        <div class="skill-row"><span class="skill-label">Languages:</span> C++, C#, Python, SQL, Java, HTML, CSS</div>
+        <div class="skill-row"><span class="skill-label">Frameworks &amp; Libraries:</span> Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Streamlit</div>
+        <div class="skill-row"><span class="skill-label">Tools &amp; Platforms:</span> GitHub, Jupyter Notebook, MySQL, Google Colab, MSExcel, PowerBI</div>
+        <div class="skill-row"><span class="skill-label">Core Skills:</span> Data Analysis, Data Reporting, Data Visualization, Research &amp; Information Gathering, Data Structures and Algorithms, OOPS, Problem Solving</div>
+        <div class="skill-row"><span class="skill-label">Soft Skills:</span> Analytical, Adaptable, Collaborative, Proactive, Detail-oriented</div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section">
+        <div class="section-title">Projects</div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">
+                    Intelligent CPU Scheduler Simulator |
+                    <a href="https://intelligentcpuscheduler.vercel.app/" target="_blank">Live Demo</a> |
+                    <a href="https://github.com/Sagar471-1" target="_blank">GitHub</a>
+                </div>
+                <div class="entry-date">Jul 2025 – Aug 2025</div>
+            </div>
+            <ul>
+                <li>Built a Python-based simulator modelling CPU process scheduling using FCFS, SJF, Round Robin, and priority algorithms; generated analytical reports on scheduling efficiency to support performance evaluation and data-driven decision-making.</li>
+                <li>Implemented a dynamic process input interface allowing users to add, modify, or remove processes in real-time and observe scheduling behavior immediately, collaborating with peers to validate design requirements.</li>
+                <li>Optimized algorithm performance to handle up to 1000 concurrent processes with accurate calculation and reporting of key metrics: waiting time, turnaround time, and CPU utilization.</li>
+            </ul>
+            <div class="tech-line"><span class="tech-label">Tech:</span> Python, Pandas, NumPy, Streamlit</div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">
+                    Loan Defaulter EDA |
+                    <a href="https://github.com/Sagar471-1" target="_blank">GitHub</a>
+                </div>
+                <div class="entry-date">May 2025 – Jun 2025</div>
+            </div>
+            <ul>
+                <li>Conducted end-to-end research and data collection, performing preprocessing tasks including missing value handling, encoding categorical variables, and feature scaling to prepare structured datasets for analysis.</li>
+                <li>Performed statistical analysis and EDA to identify high-impact features influencing loan default risk; produced comprehensive data reports and visualizations using Matplotlib and Seaborn to communicate findings to cross-functional stakeholders.</li>
+            </ul>
+            <div class="tech-line"><span class="tech-label">Tech:</span> Python, Pandas, NumPy, Matplotlib, Seaborn</div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">
+                    Feel the Vibe AI |
+                    <a href="https://feel-the-vibe-ai.lovable.app/" target="_blank">Live Demo</a> |
+                    <a href="https://github.com/Sagar471-1" target="_blank">GitHub</a>
+                </div>
+                <div class="entry-date">May 2025 – Jun 2025</div>
+            </div>
+            <ul>
+                <li>Designed a sentiment classification system using NLP techniques to categorize text into positive, negative, and neutral sentiments, generating actionable sentiment reports from bulk TXT and CSV inputs.</li>
+                <li>Engineered data processing pipelines that produced sentiment distribution reports, supporting research on user feedback trends and enabling data-driven content strategies.</li>
+                <li>Enhanced user experience by providing instant feedback and smooth transitions across sentiment result states.</li>
+            </ul>
+            <div class="tech-line"><span class="tech-label">Tech:</span> Python, Pandas, Lovable.ai</div>
+        </div>
+    </div>
+
+    <!-- Training -->
+    <div class="section">
+        <div class="section-title">Training</div>
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Lovely Professional University</div>
+                <div class="entry-date">Jul 2025 – Aug 2025</div>
+            </div>
+            <div class="entry-sub"><strong>Mastering Data Structures and Algorithms</strong> | <a href="https://github.com/Sagar471-1" target="_blank">Certificate</a></div>
+            <ul>
+                <li>Completed intensive training focused on algorithmic thinking and optimized problem-solving techniques.</li>
+                <li>Strengthened foundations in arrays, linked lists, stacks, queues, trees, graphs, and dynamic programming.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Certificates -->
+    <div class="section">
+        <div class="section-title">Certificates</div>
+        <div class="cert-row">
+            <span>Foundational C# programming with Microsoft</span>
+            <span>Mar 2026</span>
+        </div>
+        <div class="cert-row">
+            <span>Master Generative AI and Generative AI Tools | Infosys</span>
+            <span>Aug 2025</span>
+        </div>
+        <div class="cert-row">
+            <span>ChatGPT-4 Prompt Engineering: ChatGPT, Generative AI &amp; LLM | Infosys</span>
+            <span>Aug 2025</span>
+        </div>
+    </div>
+
+    <!-- Achievements -->
+    <div class="section">
+        <div class="section-title">Achievements</div>
+        <div class="achieve-row">
+            <span>Earned 50 days LeetCode badge by maintaining consistent daily problem solving over time.</span>
+            <span>Mar 2026</span>
+        </div>
+        <div class="achieve-row">
+            <span>Solved <strong>300+</strong> Data Structures and Algorithms problems on LeetCode.</span>
+            <span>Mar 2026</span>
+        </div>
+        <div class="achieve-row">
+            <span>Earned HackerRank Problem Solving (Basic) badge using C++ fundamentals.</span>
+            <span>Nov 2024</span>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+        <div class="section-title">Education</div>
+
+        <div class="edu-entry">
+            <div class="edu-header">
+                <span class="edu-inst">Lovely Professional University</span>
+                <span class="edu-loc">Phagwara, Punjab</span>
+            </div>
+            <div class="edu-header">
+                <span class="edu-degree">B.Tech – Computer Science and Engineering</span>
+                <span class="edu-dates">Aug 2023 – Present</span>
+            </div>
+        </div>
+
+        <div class="edu-entry">
+            <div class="edu-header">
+                <span class="edu-inst">St. Joseph's School</span>
+                <span class="edu-loc">Kota, Rajasthan</span>
+            </div>
+            <div class="edu-header">
+                <span class="edu-degree">Intermediate – 79.6%</span>
+                <span class="edu-dates">Apr 2020 – Mar 2021</span>
+            </div>
+        </div>
+
+        <div class="edu-entry">
+            <div class="edu-header">
+                <span class="edu-inst">St. Paul's School</span>
+                <span class="edu-loc">Kota, Rajasthan</span>
+            </div>
+            <div class="edu-header">
+                <span class="edu-degree">Matriculation – 79.4%</span>
+                <span class="edu-dates">Apr 2017 – Mar 2018</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
