@@ -5,9 +5,10 @@ import {
     FaHtml5, FaCss3Alt, FaPython, FaJava, FaGithub, FaDatabase, FaCode
 } from 'react-icons/fa';
 import {
-    SiCplusplus, SiCsharp, SiPandas, SiNumpy, SiScikitlearn, SiStreamlit,
+    SiCplusplus, SiPandas, SiNumpy, SiScikitlearn, SiStreamlit,
     SiJupyter, SiMysql, SiGooglecolab
 } from 'react-icons/si';
+import { TbBrandCSharp } from 'react-icons/tb';
 import { Award, Brain, BarChart3, Binary, Settings, Sparkles } from 'lucide-react';
 import { skills } from '../data/portfolioData';
 
@@ -15,7 +16,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const languages = [
     { name: "C++", icon: <SiCplusplus className="text-[#00599C]" />, glow: "#00599C" },
-    { name: "C#", icon: <SiCsharp className="text-[#239120]" />, glow: "#239120" },
+    { name: "C#", icon: <TbBrandCSharp className="text-[#239120]" />, glow: "#239120" },
     { name: "Python", icon: <FaPython className="text-[#3776AB]" />, glow: "#3776AB" },
     { name: "SQL", icon: <FaDatabase className="text-[#4479A1]" />, glow: "#4479A1" },
     { name: "Java", icon: <FaJava className="text-[#007396]" />, glow: "#007396" },

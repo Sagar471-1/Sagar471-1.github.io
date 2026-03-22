@@ -1,0 +1,30 @@
+
+> portfolio-client@0.0.0 build
+> vite build
+
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+transforming...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[32m✓[39m 2619 modules transformed.
+[31mx[39m Build failed in 7.66s
+[31merror during build:
+[31msrc/components/Skills.jsx (8:17): "SiCsharp" is not exported by "node_modules/react-icons/si/index.mjs", imported by "src/components/Skills.jsx".[31m
+file: [36mC:/Users/HP/PORTFOLIO/client/src/components/Skills.jsx:8:17[31m
+[33m
+ 6: } from 'react-icons/fa';
+ 7: import {
+ 8:     SiCplusplus, SiCsharp, SiPandas, SiNumpy, SiScikitlearn, SiStreamlit,
+                     ^
+ 9:     SiJupyter, SiMysql, SiGooglecolab
+10: } from 'react-icons/si';
+[31m
+    at getRollupError (file:///C:/Users/HP/PORTFOLIO/client/node_modules/rollup/dist/es/shared/parseAst.js:401:41)
+    at error (file:///C:/Users/HP/PORTFOLIO/client/node_modules/rollup/dist/es/shared/parseAst.js:397:42)
+    at Module.error (file:///C:/Users/HP/PORTFOLIO/client/node_modules/rollup/dist/es/shared/node-entry.js:16956:16)
+    at Module.traceVariable (file:///C:/Users/HP/PORTFOLIO/client/node_modules/rollup/dist/es/shared/node-entry.js:17412:29)
+    at ModuleScope.findVariable (file:///C:/Users/HP/PORTFOLIO/client/node_modules/rollup/dist/es/shared/node-entry.js:15076:39)
+    at Identifier.bind (file:///C:/Users/HP/PORTFOLIO/client/node_modules/rollup/dist/es/shared/node-entry.js:5423:40)
+    at CallExpression.bind (file:///C:/Users/HP/PORTFOLIO/client/node_modules/rollup/dist/es/shared/node-entry.js:2809:28)
+    at CallExpression.bind (file:///C:/Users/HP/PORTFOLIO/client/node_modules/rollup/dist/es/shared/node-entry.js:12123:15)
+    at Property.bind (file:///C:/Users/HP/PORTFOLIO/client/node_modules/rollup/dist/es/shared/node-entry.js:2813:23)
+    at ObjectExpression.bind (file:///C:/Users/HP/PORTFOLIO/client/node_modules/rollup/dist/es/shared/node-entry.js:2809:28)[39m

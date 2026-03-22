@@ -115,5 +115,7 @@ export const certifications = [
 
 export const achievements = [
     "HackerRank Problem Solving (Basic) Badge",
-    "Solved 250+ Data Structures and Algorithms problems on LeetCode"
+    "Solved 250+ Data Structures and Algorithms problems on LeetCode",
+    "Codeforces Max Rating: 1224 (Pupil)",
+    "LeetCode Max Rating: 1671 (Top 15.54%)"
 ];

@@ -5,6 +5,7 @@ import { FileText } from 'lucide-react';
 import profileImage from '../assets/profile.jpg';
 import GradientButton from './ui/gradient-button';
 import Magnetic from './ui/magnetic';
+import { Download } from 'lucide-react';
 import { aboutMe } from '../data/portfolioData';
 
 export default function Hero() {
@@ -166,7 +167,7 @@ export default function Hero() {
                 </p>
 
                 {/* Action Buttons */}
-                <div className="hero-content flex flex-col sm:flex-row gap-6 z-10">
+                <div className="hero-content flex flex-col sm:flex-row gap-6 z-10 items-center">
                     <Magnetic strength={0.2}>
                         <GradientButton className="text-sm tracking-widest" onClick={() => scrollToSection('.work-section')}>
                             VIEW PORTFOLIO
@@ -187,6 +188,16 @@ export default function Hero() {
                         <GradientButton variant="variant" className="text-sm tracking-widest" onClick={() => scrollToSection('.contact-section')}>
                             LET'S CONNECT
                         </GradientButton>
+                    </Magnetic>
+                    <Magnetic strength={0.2}>
+                        <a 
+                            href="/Resume.pdf" 
+                            download="Sagar_Kumar_Prajapati_Resume.pdf"
+                            className="flex items-center justify-center p-3 sm:p-4 rounded-full bg-gradient-to-r from-[#522B5B] to-[#854F6C] hover:from-[#854F6C] hover:to-[#DFB6B2] transition-colors duration-300 shadow-lg text-[#FBE4D8] border border-[#FBE4D8]/10 hover:shadow-[#DFB6B2]/20 hover:scale-105 transform cursor-pointer"
+                            title="Download Resume"
+                        >
+                            <Download size={20} />
+                        </a>
                     </Magnetic>
                 </div>
             </div>

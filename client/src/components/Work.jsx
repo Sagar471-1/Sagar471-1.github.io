@@ -144,9 +144,9 @@ export default function Work({ projects }) {
                                                     backdropFilter: 'blur(10px)',
                                                 }}
                                             >
-                                                {project.image ? (
+                                                {project.image || (project.link && !project.link.includes('github.com') && project.link !== '#') ? (
                                                     <img
-                                                        src={project.image}
+                                                        src={project.image || `https://image.thum.io/get/width/1200/crop/800/${project.link}`}
                                                         alt={project.title}
                                                         loading="lazy"
                                                         decoding="async"
