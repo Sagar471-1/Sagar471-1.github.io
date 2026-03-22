@@ -214,7 +214,7 @@ export default function About() {
                     { val: "1224", lab: "Codeforces (Pupil)", grad: "from-[#522B5B] to-[#854F6C]", icon: "🏆" },
                     { val: "1,671", lab: "LeetCode Rating", grad: "from-[#854F6C] to-[#DFB6B2]", icon: "💻" },
                     { val: "15.54%", lab: "LeetCode Ranking", grad: "from-[#DFB6B2] to-[#522B5B]", icon: "📊" },
-                    { val: "250+", lab: "Problems Solved", grad: "from-[#522B5B] to-[#DFB6B2]", icon: "⚡" }
+                    { val: "300+", lab: "Problems Solved", grad: "from-[#522B5B] to-[#DFB6B2]", icon: "⚡" }
                 ].map((stat, idx) => (
                     <div key={idx} className="stat-card group relative overflow-hidden will-change-transform">
                         <div className="absolute -inset-0.5 bg-gradient-to-r from-[#522B5B] to-[#854F6C] rounded-3xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"></div>

@@ -33,7 +33,7 @@ export const projects = [
         tech: ["Python", "Pandas", "NumPy", "Streamlit"],
         github: "https://github.com/Sagar471-1",
         link: "https://intelligentcpuscheduler.vercel.app/",
-        image: "https://image.thum.io/get/width/600/crop/400/https://intelligentcpuscheduler.vercel.app/"
+        image: "/cpu_scheduler_preview.png"
     },
     {
         id: 2,
@@ -48,7 +48,7 @@ export const projects = [
         tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
         github: "https://github.com/Sagar471-1",
         link: "https://github.com/Sagar471-1",
-        image: "https://image.thum.io/get/width/600/crop/400/https://github.com/Sagar471-1"
+        image: "/loan_eda_preview.png"
     },
     {
         id: 3,
@@ -63,7 +63,7 @@ export const projects = [
         tech: ["Python", "Pandas"],
         github: "https://github.com/Sagar471-1",
         link: "https://feel-the-vibe-ai.lovable.app/",
-        image: "https://image.thum.io/get/width/600/crop/400/https://feel-the-vibe-ai.lovable.app/"
+        image: "/feel_the_vibe_preview.png"
     }
 ];
 
@@ -115,7 +115,7 @@ export const certifications = [
 
 export const achievements = [
     "HackerRank Problem Solving (Basic) Badge",
-    "Solved 250+ Data Structures and Algorithms problems on LeetCode",
+    "Solved 300+ Data Structures and Algorithms problems on LeetCode",
     "Codeforces Max Rating: 1224 (Pupil)",
     "LeetCode Max Rating: 1671 (Top 15.54%)"
 ];
