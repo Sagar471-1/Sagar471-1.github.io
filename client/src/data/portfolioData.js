@@ -32,7 +32,8 @@ export const projects = [
         ],
         tech: ["Python", "Pandas", "NumPy", "Streamlit"],
         github: "https://github.com/Sagar471-1",
-        link: "https://github.com/Sagar471-1"
+        link: "https://intelligentcpuscheduler.vercel.app/",
+        image: "https://image.thum.io/get/width/600/crop/400/https://intelligentcpuscheduler.vercel.app/"
     },
     {
         id: 2,
@@ -46,7 +47,8 @@ export const projects = [
         ],
         tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
         github: "https://github.com/Sagar471-1",
-        link: "https://github.com/Sagar471-1"
+        link: "https://github.com/Sagar471-1",
+        image: "https://image.thum.io/get/width/600/crop/400/https://github.com/Sagar471-1"
     },
     {
         id: 3,
@@ -60,7 +62,8 @@ export const projects = [
         ],
         tech: ["Python", "Pandas"],
         github: "https://github.com/Sagar471-1",
-        link: "https://github.com/Sagar471-1"
+        link: "https://feel-the-vibe-ai.lovable.app/",
+        image: "https://image.thum.io/get/width/600/crop/400/https://feel-the-vibe-ai.lovable.app/"
     }
 ];
 
@@ -81,12 +84,12 @@ export const education = [
         location: "Phagwara, Punjab"
     },
     {
-        institution: "St. Joseph’s School",
+        institution: "St. Joseph's School",
         degree: "Intermediate",
         percentage: "79.6%"
     },
     {
-        institution: "St. Paul’s School",
+        institution: "St. Paul's School",
         degree: "Matriculation",
         percentage: "79.4%"
     }

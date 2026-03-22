@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { motion } from 'framer-motion';
+import { FileText } from 'lucide-react';
 import profileImage from '../assets/profile.jpg';
 import GradientButton from './ui/gradient-button';
 import Magnetic from './ui/magnetic';
@@ -20,7 +21,6 @@ export default function Hero() {
         let ctx = gsap.context(() => {
             const tl = gsap.timeline();
 
-            // Initial Entry
             tl.from(".hero-glass-card", {
                 scale: 0.9,
                 opacity: 0,
@@ -36,7 +36,6 @@ export default function Hero() {
                     ease: "power3.out",
                 }, "-=1");
 
-            // Floating Animation for the Glass Card
             gsap.to(".hero-glass-card", {
                 y: 15,
                 duration: 3,
@@ -49,7 +48,6 @@ export default function Hero() {
         return () => ctx.revert();
     }, []);
 
-    // Mouse tilt effect for the Glass Card
     const handleMouseMove = (e) => {
         if (!containerRef.current) return;
         const { clientX, clientY } = e;
@@ -116,7 +114,6 @@ export default function Hero() {
             onMouseLeave={handleMouseLeave}
         >
             <div ref={containerRef} className="hero-glass-card relative p-8 md:p-12 rounded-[2.5rem] border border-[#FBE4D8]/10 bg-[#150B1F]/30 backdrop-blur-xl shadow-2xl overflow-hidden flex flex-col items-center max-w-4xl w-full perspective-1000">
-                {/* Decorative Background Elements inside Glass Card */}
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#854F6C]/20 blur-3xl rounded-full -mr-16 -mt-16"></div>
                 <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#522B5B]/20 blur-3xl rounded-full -ml-24 -mb-24"></div>
 
@@ -174,6 +171,17 @@ export default function Hero() {
                         <GradientButton className="text-sm tracking-widest" onClick={() => scrollToSection('.work-section')}>
                             VIEW PORTFOLIO
                         </GradientButton>
+                    </Magnetic>
+                    <Magnetic strength={0.2}>
+                        <a
+                            href="/resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-8 py-4 border border-[#DFB6B2]/40 rounded-full text-[#DFB6B2] text-sm tracking-widest font-semibold hover:bg-[#DFB6B2]/10 hover:border-[#DFB6B2]/70 transition-all duration-300 cursor-pointer"
+                        >
+                            <FileText className="w-4 h-4" />
+                            RESUME
+                        </a>
                     </Magnetic>
                     <Magnetic strength={0.2}>
                         <GradientButton variant="variant" className="text-sm tracking-widest" onClick={() => scrollToSection('.contact-section')}>

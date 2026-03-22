@@ -14,7 +14,6 @@ export default function About() {
 
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
-            // Animated title with split effect
             gsap.from(".about-title", {
                 scrollTrigger: {
                     trigger: ".about-section",
@@ -29,7 +28,6 @@ export default function About() {
                 ease: "power4.out"
             });
 
-            // Underline animation
             gsap.from(".about-underline", {
                 scrollTrigger: {
                     trigger: ".about-section",
@@ -43,7 +41,6 @@ export default function About() {
                 ease: "power3.inOut"
             });
 
-            // Profile card with rotation
             gsap.from(".profile-card", {
                 scrollTrigger: {
                     trigger: ".about-content",
@@ -58,7 +55,6 @@ export default function About() {
                 ease: "power3.out"
             });
 
-            // Bio cards staggered animation
             gsap.from(".bio-card", {
                 scrollTrigger: {
                     trigger: ".bio-cards-container",
@@ -73,7 +69,6 @@ export default function About() {
                 ease: "power3.out"
             });
 
-            // Stats with counter animation
             gsap.from(".stat-card", {
                 scrollTrigger: {
                     trigger: ".stats-container",
@@ -89,7 +84,6 @@ export default function About() {
                 ease: "back.out(1.4)"
             });
 
-            // Floating animation for profile
             gsap.to(".profile-circle", {
                 y: -10,
                 duration: 2,
@@ -98,7 +92,6 @@ export default function About() {
                 ease: "sine.inOut"
             });
 
-            // Parallax effect on scroll
             gsap.to(".bio-card", {
                 scrollTrigger: {
                     trigger: ".bio-cards-container",
@@ -135,13 +128,10 @@ export default function About() {
 
             {/* Main Content Grid */}
             <div className="about-content w-full max-w-7xl grid grid-cols-1 lg:grid-cols-5 gap-10 mb-20 relative z-10">
-                {/* Left Column - Enhanced Profile Card */}
+                {/* Left Column - Profile Card */}
                 <div ref={profileRef} className="lg:col-span-2 flex flex-col items-center lg:items-start profile-card">
                     <div className="relative group w-full">
-                        {/* Animated Gradient Ring */}
                         <div className="absolute -inset-2 bg-gradient-to-r from-[#522B5B] via-[#854F6C] to-[#DFB6B2] rounded-3xl blur-lg opacity-60 group-hover:opacity-100 transition-all duration-700 animate-pulse"></div>
-
-                        {/* Profile Card Container */}
                         <div className="relative bg-[#150B1F]/60 backdrop-blur-md border border-[#522B5B]/30 rounded-3xl p-8 shadow-2xl will-change-transform">
                             <GlowingEffect
                                 spread={50}
@@ -152,8 +142,6 @@ export default function About() {
                                 borderWidth={2}
                                 movementDuration={0.4}
                             />
-
-                            {/* Profile Circle with Float Animation */}
                             <div className="flex justify-center mb-6">
                                 <div className="relative">
                                     <div className="absolute -inset-3 bg-gradient-to-r from-[#522B5B] via-[#854F6C] to-[#DFB6B2] rounded-full blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
@@ -162,11 +150,9 @@ export default function About() {
                                     </div>
                                 </div>
                             </div>
-
                             <h3 className="text-3xl font-bold text-[#FBE4D8] mb-3 text-center font-display">
                                 {personalInfo.name}
                             </h3>
-
                             <div className="space-y-3 mb-6">
                                 <div className="flex items-center justify-center lg:justify-start gap-3 text-[#DFB6B2] text-sm font-medium uppercase tracking-[0.2em]">
                                     <Briefcase className="w-4 h-4 text-[#854F6C]" />
@@ -181,7 +167,6 @@ export default function About() {
                                     <span>SDE Aspirant</span>
                                 </div>
                             </div>
-
                             <div className="flex justify-center gap-2 mt-6">
                                 {[1, 2, 3].map(i => (
                                     <div key={i} className="w-2 h-2 rounded-full bg-gradient-to-r from-[#522B5B] to-[#854F6C] animate-pulse" style={{ animationDelay: `${i * 0.2}s` }}></div>
@@ -191,7 +176,7 @@ export default function About() {
                     </div>
                 </div>
 
-                {/* Right Column - Enhanced Bio Cards */}
+                {/* Right Column - Bio Cards */}
                 <div ref={bioCardsRef} className="lg:col-span-3 space-y-5 bio-cards-container">
                     <div className="bio-card relative group will-change-transform">
                         <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-2xl p-8 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#522B5B]/20">
@@ -202,7 +187,6 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-
                     <div className="bio-card relative group will-change-transform">
                         <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-2xl p-8 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#854F6C]/20">
                             <div className="relative z-10">
@@ -212,7 +196,6 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-
                     <div className="bio-card relative group will-change-transform">
                         <div className="relative bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-2xl p-8 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#DFB6B2]/20">
                             <div className="relative z-10">
@@ -225,12 +208,13 @@ export default function About() {
                 </div>
             </div>
 
-            {/* Enhanced Stats Container */}
-            <div className="stats-container w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-8 mb-24 relative z-10">
+            {/* Stats Container - Competitive Programming */}
+            <div className="stats-container w-full max-w-7xl grid grid-cols-2 md:grid-cols-4 gap-8 mb-24 relative z-10">
                 {[
-                    { val: "79.6%", lab: "Intermediate Score", grad: "from-[#522B5B] to-[#854F6C]", icon: "🎓" },
-                    { val: "250+", lab: "LeetCode Problems", grad: "from-[#854F6C] to-[#DFB6B2]", icon: "💻" },
-                    { val: "21+", lab: "Skills Mastered", grad: "from-[#DFB6B2] to-[#522B5B]", icon: "⚡" }
+                    { val: "1224", lab: "Codeforces (Pupil)", grad: "from-[#522B5B] to-[#854F6C]", icon: "🏆" },
+                    { val: "1,671", lab: "LeetCode Rating", grad: "from-[#854F6C] to-[#DFB6B2]", icon: "💻" },
+                    { val: "15.54%", lab: "LeetCode Ranking", grad: "from-[#DFB6B2] to-[#522B5B]", icon: "📊" },
+                    { val: "250+", lab: "Problems Solved", grad: "from-[#522B5B] to-[#DFB6B2]", icon: "⚡" }
                 ].map((stat, idx) => (
                     <div key={idx} className="stat-card group relative overflow-hidden will-change-transform">
                         <div className="absolute -inset-0.5 bg-gradient-to-r from-[#522B5B] to-[#854F6C] rounded-3xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"></div>
