@@ -211,14 +211,18 @@ export default function About() {
             {/* Stats Container - Competitive Programming */}
             <div className="stats-container w-full max-w-7xl grid grid-cols-2 md:grid-cols-4 gap-8 mb-24 relative z-10">
                 {[
-                    { val: "1224", lab: "Codeforces (Pupil)", grad: "from-[#522B5B] to-[#854F6C]", icon: "🏆" },
-                    { val: "1,715", lab: "LeetCode Rating", grad: "from-[#854F6C] to-[#DFB6B2]", icon: "💻" },
-                    { val: "15.54%", lab: "LeetCode Ranking", grad: "from-[#DFB6B2] to-[#522B5B]", icon: "📊" },
-                    { val: "300+", lab: "Problems Solved", grad: "from-[#522B5B] to-[#DFB6B2]", icon: "⚡" }
+                    { val: "1224", lab: "Codeforces (Pupil)", grad: "from-[#522B5B] to-[#854F6C]", icon: "🏆", link: personalInfo.codeforces },
+                    { val: "1,715", lab: "LeetCode Rating", grad: "from-[#854F6C] to-[#DFB6B2]", icon: "💻", link: personalInfo.leetcode },
+                    { val: "15.54%", lab: "LeetCode Ranking", grad: "from-[#DFB6B2] to-[#522B5B]", icon: "📊", link: personalInfo.leetcode },
+                    { val: "300+", lab: "Problems Solved", grad: "from-[#522B5B] to-[#DFB6B2]", icon: "⚡", link: personalInfo.leetcode }
                 ].map((stat, idx) => (
-                    <div key={idx} className="stat-card group relative overflow-hidden will-change-transform">
+                    <a key={idx} 
+                       href={stat.link} 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       className="stat-card group relative overflow-hidden will-change-transform block">
                         <div className="absolute -inset-0.5 bg-gradient-to-r from-[#522B5B] to-[#854F6C] rounded-3xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"></div>
-                        <div className="relative h-full bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-3xl p-10 hover:border-[#DFB6B2]/50 transition-all duration-500 transform hover:scale-105">
+                        <div className="relative h-full bg-[#150B1F]/50 backdrop-blur-md border border-[#522B5B]/30 rounded-3xl p-10 hover:border-[#DFB6B2]/50 transition-all duration-500 transform group-hover:scale-105 group-active:scale-95">
                             <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-[#522B5B]/10 to-transparent rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
                             <div className="relative z-10 text-center">
                                 <div className="text-4xl mb-4">{stat.icon}</div>
@@ -226,7 +230,7 @@ export default function About() {
                                 <div className="text-sm text-[#DFB6B2] uppercase tracking-[0.3em] font-semibold">{stat.lab}</div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 ))}
             </div>
         </section>

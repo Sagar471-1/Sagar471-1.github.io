@@ -4,6 +4,8 @@ export const personalInfo = {
     phone: "+91 7878978590",
     linkedin: "https://linkedin.com/in/sagar-prajapati31512",
     github: "https://github.com/Sagar471-1",
+    leetcode: "https://leetcode.com/u/SUGGU939/",
+    codeforces: "https://codeforces.com/profile/sagarprajapati31512",
     title: "Computer Science Student | Data Science & Software Development Enthusiast"
 };
 
