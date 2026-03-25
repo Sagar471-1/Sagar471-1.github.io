@@ -117,5 +117,5 @@ export const achievements = [
     "HackerRank Problem Solving (Basic) Badge",
     "Solved 300+ Data Structures and Algorithms problems on LeetCode",
     "Codeforces Max Rating: 1224 (Pupil)",
-    "LeetCode Max Rating: 1671 (Top 15.54%)"
+    "LeetCode Max Rating: 1715 (Top 15.54%)"
 ];

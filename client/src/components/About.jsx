@@ -212,7 +212,7 @@ export default function About() {
             <div className="stats-container w-full max-w-7xl grid grid-cols-2 md:grid-cols-4 gap-8 mb-24 relative z-10">
                 {[
                     { val: "1224", lab: "Codeforces (Pupil)", grad: "from-[#522B5B] to-[#854F6C]", icon: "🏆" },
-                    { val: "1,671", lab: "LeetCode Rating", grad: "from-[#854F6C] to-[#DFB6B2]", icon: "💻" },
+                    { val: "1,715", lab: "LeetCode Rating", grad: "from-[#854F6C] to-[#DFB6B2]", icon: "💻" },
                     { val: "15.54%", lab: "LeetCode Ranking", grad: "from-[#DFB6B2] to-[#522B5B]", icon: "📊" },
                     { val: "300+", lab: "Problems Solved", grad: "from-[#522B5B] to-[#DFB6B2]", icon: "⚡" }
                 ].map((stat, idx) => (
